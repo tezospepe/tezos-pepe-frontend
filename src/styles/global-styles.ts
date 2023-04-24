@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import DarumaDropOne from './app/assets/DarumaDropOne.ttf';
+import DarumaDropOne from 'src/app/assets/DarumaDropOne.ttf';
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
