@@ -6,7 +6,8 @@ export const CTA = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
 `
 
 export const CTAHeader = styled.h1`
@@ -15,26 +16,32 @@ export const CTAHeader = styled.h1`
   text-align: center;
 `;
 
-export const CTADescription = styled.span`
+export const CTADescription = styled.div`
   max-width: 34rem;
   color: ${p => p.theme.textSecondary};
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 
 export const CTAClick = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 3rem;
   gap: 1rem;
 `
 export const CTAButton = styled.button<CTAButtonProps>`
   width: 6rem;
   height: 3rem;
   border: none;
-  color: ${p => p.theme.text};
+  border-radius: 14px;
+  color: ${p => p.variant == ButtonVariant.Outline ? `${p.theme.text}` : `${p.theme.background}`};
   outline: 
     ${p => p.variant == ButtonVariant.Outline ? `2px solid ${p.theme.text}` : `2px solid ${p.theme.backgroundVariant}`};
   background-color: 
     ${p => p.variant == ButtonVariant.Outline ? 'transparent' : p.theme.backgroundVariant};
+  cursor: pointer;
 `

@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 import { SplashCTA } from './SplashCTA'
 import { SplashPepe } from './SplashPepe'
+import { Backdrop } from 'app/components/Backdrop';
 
-export const PageWrapper = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
+export const PageWrapper = styled(Backdrop)`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
 `
 
 export const SplashPage = () => {
