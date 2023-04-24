@@ -10,7 +10,7 @@ export const selectTheme = createSelector(
   theme => {
     if (theme.selected === 'system') {
       // return isSystemDark ? themes.dark : themes.light;
-      return themes.dark;
+      return themes.tezos;
     }
     return themes[theme.selected];
   },
