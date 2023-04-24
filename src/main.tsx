@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { App } from './app/index.tsx'
-import './index.css'
-import { GlobalStyle } from './styles/global-styles'
+import { ThemeProvider } from './styles/theme/ThemeProvider.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
 )
