@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Darumadrop One', Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    background-color: ${p => p.theme.backgroundVariant}
+    background-color: ${p => p.theme.background}
   }
 
   body.fontLoaded {
