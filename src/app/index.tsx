@@ -1,8 +1,15 @@
 import { GlobalStyle } from 'src/styles/global-styles'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Splash } from './pages/Splash/Loadable';
 
 export const App = () => {
-  return (<>
-    <GlobalStyle />
-  </>)
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Splash />} />
+        <Route path="*" element={<Splash />} />
+      </Routes>
+      <GlobalStyle />
+    </BrowserRouter>
+  )
 }
