@@ -8,13 +8,15 @@ export const SplashCTA = () => {
         PEPE without the Gas Fees
       </CTAHeader>
       <CTADescription>
-      lipsome dupsome lipsome dupsome lipsome dupsome lipsome dupsome
-      lipsome dupsome lipsome dupsome lipsome dupsome lipsome dupsomelipsome dupsome lipsome dupsome lipsome dupsome lipsome dupsome lipsome 
-      dupsome lipsome dupsome
+        <span>If a picture is worth a thousand words, then a meme is worth a thousand pictures!</span>
+        <span>
+          Tezos Pepe is no different - Pepes may look alike, but no two Pepes are the same!  
+          With Tezos Pepe, tezonians can have fun building, trading, playing, memeing, and using the DAO treasury to fund other projects.
+        </span>
       </CTADescription>
       <CTAClick>
-        <CTAButton>PepePot</CTAButton>
-        <CTAButton variant={ButtonVariant.Outline}>PepeSwap</CTAButton>
+        <a href="https://pepeswap.tez.page/"><CTAButton>PepePot</CTAButton></a>
+        <a href="https://pepeswap.tez.page/"><CTAButton variant={ButtonVariant.Outline}>PepeSwap</CTAButton></a>
       </CTAClick>
     </CTA>
   )
