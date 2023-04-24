@@ -1,13 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import DarumaDropOne from 'src/app/assets/DarumaDropOne.ttf';
+import DarumaDropOne from 'src/app/assets/darumadropone-regular-webfont.woff';
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Daruma Drop One';
+    font-family: 'Darumadrop One';
     src: 
-      local('Daruma Drop One'), 
-      local('DarumaDropOne'),
-      url(${DarumaDropOne}) format('ttf');
+      url(${DarumaDropOne}) format('woff');
     font-weight: 300;
     font-style: normal;
   }
@@ -28,12 +26,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Daruma Drop One', Helvetica, Arial, sans-serif;
+    font-family: 'Darumadrop One', Helvetica, Arial, sans-serif;
     font-size: 1rem;
+    background-color: ${p => p.theme.backgroundVariant}
   }
 
   body.fontLoaded {
-    font-family: 'Daruma Drop One', Helvetica, Arial, sans-serif;
+    font-family: 'Darumadrop One', Helvetica, Arial, sans-serif;
   }
   
   p,
