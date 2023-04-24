@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import DarumaDropOne from 'src/app/assets/darumadropone-regular-webfont.woff';
+import { StyleConstants } from './style-constants';
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -28,7 +29,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Darumadrop One', Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    background-color: ${p => p.theme.background}
+    background-color: ${p => p.theme.background};
+    padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
   }
 
   body.fontLoaded {
