@@ -24,8 +24,8 @@ export const NavOptions = () => {
       alt: 'Buy',
     },
     {
-      url: '#',
-      name: 'Pepe DAO',
+      url: 'https://tezos-homebase.io/explorer/dao/KT1LyPqdRVBFdQvhjyybG5osRCXnGSrk15M5/overview',
+      name: 'DAO',
       alt: 'DAO',
     },
   ];
