@@ -12,7 +12,7 @@ export const CTA = styled.div`
 
 export const CTAHeader = styled.h1`
   color: ${p => p.theme.text};
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
 `;
 
