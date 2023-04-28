@@ -7,7 +7,8 @@ export const NavItem = styled.a`
   font-weight: 500;
   color: ${p => p.theme.text};
   text-decoration: none;
-
+  cursor: pointer;
+  
   :hover {
     text-decoration: underline;
   }

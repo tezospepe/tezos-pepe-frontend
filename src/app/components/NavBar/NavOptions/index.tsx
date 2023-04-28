@@ -14,12 +14,11 @@ export const NavContent = styled.div`
 export const NavOptions = () => {
   const pages: NavPage[] = [
     {
-      url: '#',
       name: 'Farm',
       alt: 'Farm',
       subpage: [
         {
-          url: 'https://crunchy.network/',
+          url: 'https://crunchy.network/#/farms?q=Pepe',
           name: 'Crunchy',
           alt: 'Crunchy Network',
         },
@@ -31,7 +30,6 @@ export const NavOptions = () => {
       ],
     },
     {
-      url: '#',
       name: 'Buy',
       alt: 'Buy',
       subpage: [
@@ -41,12 +39,12 @@ export const NavOptions = () => {
           alt: 'Crunchy Network',
         },
         {
-          url: 'https://spicyswap.xyz/#/swap',
+          url: 'https://spicyswap.xyz/#/swap?tokenLeft=xtz&tokenRight=KT1MZg99PxMDEENwB4Fi64xkqAVh5d1rv8Z9:0',
           name: 'SpicySwap',
           alt: 'SpicySwap',
         },
         {
-          url: 'https://3route.io/swap',
+          url: 'https://3route.io/swap/xtz/pepe',
           name: '3Route',
           alt: '3Route',
         },
@@ -69,7 +67,7 @@ export const NavOptions = () => {
       {pages.map((page, index) => (
         <NavItemContainer key={`c-${index}`}>
           <NavItem
-            href={page.url}
+            href={page.url && page.url}
             target="_blank"
             title={page.alt}
             rel="noopener noreferrer"
@@ -80,7 +78,7 @@ export const NavOptions = () => {
           {page.subpage && (
             <Dropdown>
               {page.subpage.map((subpage, index) => (
-                <NavItem href={subpage.url} key={`sp-${index}`}>{subpage.name}</NavItem>
+                <NavItem href={subpage.url} key={`sp-${index}`} target="_blank">{subpage.name}</NavItem>
               ))}
             </Dropdown>
           )}

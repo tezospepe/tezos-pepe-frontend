@@ -1,5 +1,5 @@
 export interface NavPage {
-  url: string;
+  url?: string;
   name: string;
   alt: string;
   subpage?: NavSubPage[]
