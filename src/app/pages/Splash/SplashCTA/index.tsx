@@ -1,4 +1,4 @@
-import { CTA, CTAButton, CTAClick, CTADescription, CTAHeader } from './styles'
+import { ButtonContainer, CTA, CTAButton, CTAClick, CTADescription, CTAHeader } from './styles'
 import { ButtonVariant } from './types'
 
 export const SplashCTA = () => {
@@ -15,8 +15,13 @@ export const SplashCTA = () => {
         </span>
       </CTADescription>
       <CTAClick>
-        <a href="https://pepeswap.tez.page/"><CTAButton>PepePot</CTAButton></a>
-        <a href="https://pepeswap.tez.page/"><CTAButton variant={ButtonVariant.Outline}>PepeSwap</CTAButton></a>
+        <ButtonContainer>
+          <div>soon!</div>
+          <CTAButton variant={ButtonVariant.Outline} disabled>
+            PepePot
+          </CTAButton>
+        </ButtonContainer>
+        <a href="https://pepeswap.tez.page/"><CTAButton>PepeSwap</CTAButton></a>
       </CTAClick>
     </CTA>
   )

@@ -33,6 +33,23 @@ export const CTAClick = styled.div`
   flex-direction: row;
   gap: 1rem;
 `
+
+export const ButtonContainer = styled.div`
+  position: relative;
+
+  > div {
+    position: absolute;
+    width: fit-content;
+    bottom: 35px;
+    left: 60px;
+    padding: 0 0.25rem;
+    background-color: ${p => p.theme.backgroundVariant};
+    border-radius: 8px;
+    user-select: none;
+    color: ${p => p.theme.background};
+  }
+`;
+
 export const CTAButton = styled.button<CTAButtonProps>`
   width: 6rem;
   height: 3rem;
@@ -43,5 +60,5 @@ export const CTAButton = styled.button<CTAButtonProps>`
     ${p => p.variant == ButtonVariant.Outline ? `2px solid ${p.theme.text}` : `2px solid ${p.theme.backgroundVariant}`};
   background-color: 
     ${p => p.variant == ButtonVariant.Outline ? 'transparent' : p.theme.backgroundVariant};
-  cursor: pointer;
+  cursor: ${p => p.disabled ? 'not-allowed' : 'pointer'};
 `
