@@ -1,5 +1,4 @@
-import { ButtonContainer, CTA, CTAButton, CTAClick, CTADescription, CTAHeader } from './styles'
-import { ButtonVariant } from './types'
+import { CTA, CTAClick, CTADescription, CTAHeader, CTAProductCard } from './styles'
 
 export const SplashCTA = () => {
   return (
@@ -15,13 +14,32 @@ export const SplashCTA = () => {
         </span>
       </CTADescription>
       <CTAClick>
-        <ButtonContainer>
+        <CTAProductCard href="https://pepe.tez.tools/" target="_blank" >
+          <span>
+          🐸 pepe et nunc
+          </span>
+          <span>
+            NFT platform powered by $PEPE. Users can buy and sell NFTs using $PEPE. 
+            1% of each sell is sent to the DAO Treasury
+          </span>
+        </CTAProductCard>
+        <CTAProductCard href="https://pepeswap.tez.page/" target="_blank">
+          <span>
+          🐸 PepeSwap
+          </span>
+          <span>
+          PepeSwap is a DEX front end that utilizes Spicyswap backend. It allows users to see trades, charts and liquidity in one interface.
+          </span>
+        </CTAProductCard>
+        <CTAProductCard >
           <div>soon!</div>
-          <CTAButton variant={ButtonVariant.Outline} disabled>
-            PepePot
-          </CTAButton>
-        </ButtonContainer>
-        <a href="https://pepeswap.tez.page/"><CTAButton>PepeSwap</CTAButton></a>
+          <span>
+          🐸 PepePot
+          </span>
+          <span>
+          A lottery game where users bet $PEPE to win a pot of $PEPE. 10% of each bet is burned and 10% is placed in the DAO.
+          </span>
+        </CTAProductCard>
       </CTAClick>
     </CTA>
   )

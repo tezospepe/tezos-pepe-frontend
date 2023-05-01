@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ButtonVariant, CTAButtonProps } from './types';
+import { media } from 'src/styles/media';
 
 export const CTA = styled.div`
   display: flex;
@@ -30,26 +31,13 @@ export const CTADescription = styled.div`
 
 export const CTAClick = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
-`
 
-export const ButtonContainer = styled.div`
-  position: relative;
-
-  > div {
-    position: absolute;
-    width: fit-content;
-    bottom: 35px;
-    left: 60px;
-    padding: 0 0.25rem;
-    background-color: ${p => p.theme.backgroundVariant};
-    border-radius: 8px;
-    user-select: none;
-    color: ${p => p.theme.background};
+  ${media.small} {
+    flex-direction: row;
   }
-`;
-
+`
 export const CTAButton = styled.button<CTAButtonProps>`
   width: 6rem;
   height: 3rem;
@@ -62,3 +50,43 @@ export const CTAButton = styled.button<CTAButtonProps>`
     ${p => p.variant == ButtonVariant.Outline ? 'transparent' : p.theme.backgroundVariant};
   cursor: ${p => p.disabled ? 'not-allowed' : 'pointer'};
 `
+
+export const CTAProductCard = styled.a`
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 1rem;
+  background-color: ${p => p.theme.text};
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: ${p => p.theme.primary};
+  text-decoration: none;
+
+  > span:first-of-type {
+    color: ${p => p.theme.background};
+    font-size: 1.5rem;
+  }
+
+  :last-of-type {
+    > span:last-of-type {
+      filter: blur(5px);
+    }
+  }
+
+  > div {
+    position: absolute;
+    font-size: 1.25rem;
+    left: 70%;
+    color: ${p => p.theme.text};
+    background-color: ${p => p.theme.background};
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  :hover {
+    box-shadow: 0 0 0 2px ${p => p.theme.backgroundVariant};
+  }
+`;

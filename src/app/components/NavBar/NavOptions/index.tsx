@@ -14,6 +14,27 @@ export const NavContent = styled.div`
 export const NavOptions = () => {
   const pages: NavPage[] = [
     {
+      name: 'Socials',
+      alt: 'Socials',
+      subpage: [
+        {
+          url: 'https://twitter.com/TezosPepe',
+          name: 'Twitter',
+          alt: 'Twitter',
+        },
+        {
+          url: 'https://t.me/TezosPepe',
+          name: 'Telegram',
+          alt: 'Telegram',
+        },
+        {
+          url: 'https://discord.com/invite/hVp4EP86PJ',
+          name: 'Discord',
+          alt: 'Discord',
+        }
+      ]
+    },
+    {
       name: 'Farm',
       alt: 'Farm',
       subpage: [
