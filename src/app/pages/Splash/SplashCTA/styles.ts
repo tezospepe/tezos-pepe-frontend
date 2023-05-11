@@ -54,7 +54,7 @@ export const CTAButton = styled.button<CTAButtonProps>`
 export const CTAProductCard = styled.a`
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+
   gap: 1rem;
   background-color: ${p => p.theme.text};
   border-radius: 0.5rem;
@@ -64,16 +64,11 @@ export const CTAProductCard = styled.a`
   cursor: pointer;
   color: ${p => p.theme.primary};
   text-decoration: none;
+  min-height: 150px;
 
   > span:first-of-type {
     color: ${p => p.theme.background};
     font-size: 1.5rem;
-  }
-
-  :last-of-type {
-    > span:last-of-type {
-      filter: blur(5px);
-    }
   }
 
   > div {
@@ -88,5 +83,9 @@ export const CTAProductCard = styled.a`
 
   :hover {
     box-shadow: 0 0 0 2px ${p => p.theme.backgroundVariant};
+  }
+
+  ${media.small} {
+    max-width: 300px;
   }
 `;
