@@ -4,6 +4,11 @@ frontend for the https://tezospepe.com/ homepage.
 ## requirements
 `yarn 1.22+`
 
+to start developing:
+1. `cd tezos-pepe-frontend`
+2. `yarn`
+3. `yarn dev`
+
 ## available commands
 - `yarn dev`
 runs dev server for dev server for extremely fast Hot Module Replacement (HMR).
