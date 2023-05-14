@@ -5,5 +5,5 @@ export enum ButtonVariant {
 }
 
 export interface CTAButtonProps {
-  variant?: ButtonVariant
+  variant?: ButtonVariant;
 }

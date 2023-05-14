@@ -1,5 +1,5 @@
-import { media } from "src/styles/media";
-import styled from "styled-components";
+import { media } from 'src/styles/media';
+import styled from 'styled-components';
 
 export const NavItem = styled.a`
   width: fit-content;
@@ -9,7 +9,7 @@ export const NavItem = styled.a`
   color: ${p => p.theme.text};
   text-decoration: none;
   cursor: pointer;
-  
+
   :hover {
     text-decoration: underline;
   }
@@ -35,7 +35,7 @@ export const Dropdown = styled.div`
   }
 
   a {
-    color: ${p => p.theme.background}
+    color: ${p => p.theme.background};
   }
 `;
 
@@ -45,7 +45,7 @@ export const NavItemContainer = styled.div`
   align-items: center;
   margin-top: 40px;
   padding-bottom: 40px;
-  
+
   :hover > div {
     display: flex;
   }

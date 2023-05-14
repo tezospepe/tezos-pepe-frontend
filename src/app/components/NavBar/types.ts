@@ -2,7 +2,7 @@ export interface NavPage {
   url?: string;
   name: string;
   alt: string;
-  subpage?: NavSubPage[]
+  subpage?: NavSubPage[];
 }
 
 export type NavSubPage = NavPage;

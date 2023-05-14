@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { NavPage } from "../types";
-import { Dropdown, NavItem, NavItemContainer } from "./styles";
-import { StyleConstants } from "src/styles/style-constants";
+import styled from 'styled-components';
+import { NavPage } from '../types';
+import { Dropdown, NavItem, NavItemContainer } from './styles';
+import { StyleConstants } from 'src/styles/style-constants';
 
 export const NavContent = styled.div`
   height: ${StyleConstants.NAV_BAR_HEIGHT};
@@ -9,7 +9,7 @@ export const NavContent = styled.div`
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-`
+`;
 
 export const NavOptions = () => {
   const pages: NavPage[] = [
@@ -31,8 +31,8 @@ export const NavOptions = () => {
           url: 'https://discord.com/invite/hVp4EP86PJ',
           name: 'Discord',
           alt: 'Discord',
-        }
-      ]
+        },
+      ],
     },
     {
       name: 'Farm',
@@ -47,7 +47,7 @@ export const NavOptions = () => {
           url: 'https://matterdefi.xyz/#/?live=30',
           name: 'Matter',
           alt: 'Matter Farms',
-        }
+        },
       ],
     },
     {
@@ -73,7 +73,7 @@ export const NavOptions = () => {
           url: 'https://app.plenty.network/swap?from=XTZ&to=PEPE',
           name: 'Plenty',
           alt: 'Plenty Network',
-        }
+        },
       ],
     },
     {
@@ -95,11 +95,13 @@ export const NavOptions = () => {
           >
             {page.name}
           </NavItem>
-          
+
           {page.subpage && (
             <Dropdown>
               {page.subpage.map((subpage, index) => (
-                <NavItem href={subpage.url} key={`sp-${index}`} target="_blank">{subpage.name}</NavItem>
+                <NavItem href={subpage.url} key={`sp-${index}`} target="_blank">
+                  {subpage.name}
+                </NavItem>
               ))}
             </Dropdown>
           )}
@@ -107,4 +109,4 @@ export const NavOptions = () => {
       ))}
     </NavContent>
   );
-}
+};

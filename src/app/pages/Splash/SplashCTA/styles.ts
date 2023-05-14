@@ -9,7 +9,7 @@ export const CTA = styled.div`
   align-items: center;
   padding: 1rem;
   padding-top: 2rem;
-`
+`;
 
 export const CTAHeader = styled.h1`
   color: ${p => p.theme.text};
@@ -37,19 +37,26 @@ export const CTAClick = styled.div`
   ${media.small} {
     flex-direction: row;
   }
-`
+`;
 export const CTAButton = styled.button<CTAButtonProps>`
   width: 6rem;
   height: 3rem;
   border: none;
   border-radius: 14px;
-  cursor: ${p => p.disabled ? 'not-allowed' : 'pointer'};
-  color: ${p => p.variant == ButtonVariant.Outline ? `${p.theme.text}` : `${p.theme.background}`};
-  outline: 
-    ${p => p.variant == ButtonVariant.Outline ? `2px solid ${p.theme.text}` : `2px solid ${p.theme.backgroundVariant}`};
-  background-color: 
-    ${p => p.variant == ButtonVariant.Outline ? 'transparent' : p.theme.backgroundVariant};
-`
+  color: ${p =>
+    p.variant == ButtonVariant.Outline
+      ? `${p.theme.text}`
+      : `${p.theme.background}`};
+  outline: ${p =>
+    p.variant == ButtonVariant.Outline
+      ? `2px solid ${p.theme.text}`
+      : `2px solid ${p.theme.backgroundVariant}`};
+  background-color: ${p =>
+    p.variant == ButtonVariant.Outline
+      ? 'transparent'
+      : p.theme.backgroundVariant};
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
+`;
 
 export const CTAProductCard = styled.a`
   display: flex;

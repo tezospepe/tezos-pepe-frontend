@@ -1,6 +1,6 @@
-import { NavLogo } from "./NavLogo"
-import { NavOptions } from "./NavOptions"
-import { NavBarWrapper } from "./styles"
+import { NavLogo } from './NavLogo';
+import { NavOptions } from './NavOptions';
+import { NavBarWrapper } from './styles';
 
 export const NavBar = () => {
   return (
@@ -8,5 +8,5 @@ export const NavBar = () => {
       <NavLogo />
       <NavOptions />
     </NavBarWrapper>
-  )
-}
+  );
+};

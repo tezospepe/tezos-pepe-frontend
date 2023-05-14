@@ -13,10 +13,8 @@ export const NavBarWrapper = styled.header`
   z-index: 2;
   padding: 0 1.5rem;
 
-  box-shadow: 
-    0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 5px 8px rgba(0, 0, 0, 0.14), 
-    0px 1px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px rgba(0, 0, 0, 0.14), 0px 1px 14px rgba(0, 0, 0, 0.12);
 
   @supports (backdrop-filter: blur(10px)) {
     backdrop-filter: blur(10px);
