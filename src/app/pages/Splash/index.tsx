@@ -7,7 +7,6 @@ export const PageWrapper = styled(Backdrop)`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 `
 
 export const SplashPage = () => {

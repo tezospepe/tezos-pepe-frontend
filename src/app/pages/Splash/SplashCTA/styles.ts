@@ -43,12 +43,12 @@ export const CTAButton = styled.button<CTAButtonProps>`
   height: 3rem;
   border: none;
   border-radius: 14px;
+  cursor: ${p => p.disabled ? 'not-allowed' : 'pointer'};
   color: ${p => p.variant == ButtonVariant.Outline ? `${p.theme.text}` : `${p.theme.background}`};
   outline: 
     ${p => p.variant == ButtonVariant.Outline ? `2px solid ${p.theme.text}` : `2px solid ${p.theme.backgroundVariant}`};
   background-color: 
     ${p => p.variant == ButtonVariant.Outline ? 'transparent' : p.theme.backgroundVariant};
-  cursor: ${p => p.disabled ? 'not-allowed' : 'pointer'};
 `
 
 export const CTAProductCard = styled.a`

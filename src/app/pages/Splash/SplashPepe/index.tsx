@@ -10,6 +10,6 @@ export const PepeImage = styled.img`
 
 export const SplashPepe = () => {
   return (
-      <PepeImage src={pepelegs}></PepeImage>
+    <PepeImage src={pepelegs}></PepeImage>
   )
 }

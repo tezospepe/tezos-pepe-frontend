@@ -1,4 +1,10 @@
-import { CTA, CTAClick, CTADescription, CTAHeader, CTAProductCard } from './styles'
+import { 
+  CTA,
+  CTAClick, 
+  CTADescription, 
+  CTAHeader, 
+  CTAProductCard 
+} from './styles'
 
 export const SplashCTA = () => {
   return (
