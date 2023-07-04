@@ -6,7 +6,7 @@ export function NavLogo() {
       <LogoDescription>
         <img src="https://bafybeigqka2ynrib6ytxku3nvakork5smsxni5xdqro56kd7ecsfos7z7a.ipfs.dweb.link/" />
       </LogoDescription>
-      <LogoTitle>Tezos Pepe</LogoTitle>
+      <LogoTitle>Tezos Pepe Explosion</LogoTitle>
     </LogoWrapper>
   );
 }
