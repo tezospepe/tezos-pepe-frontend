@@ -5,9 +5,9 @@ import {
   CTAHeader,
   CTAProductCard,
 } from './styles';
-import pen from 'tezospepe/tezos-pepe-frontend/src/app/pages/Splash/SplashCTA/assets/pen_56.png';
-import pot from 'tezospepe/tezos-pepe-frontend/src/app/pages/Splash/SplashCTA/assets/pot_56.png';
-import swap from 'tezospepe/tezos-pepe-frontend/src/app/pages/Splash/SplashCTA/assets/swap_56.png';
+import pen from '.assets/pen_56.png';
+import pot from '.assets/pot_56.png';
+import swap from '.assets/swap_56.png';
 export const SplashCTA = () => {
   return (
     <CTA>
