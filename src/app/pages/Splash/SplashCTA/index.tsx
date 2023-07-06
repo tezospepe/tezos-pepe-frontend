@@ -5,9 +5,10 @@ import {
   CTAHeader,
   CTAProductCard,
 } from './styles';
-import pen from './assets/pen_56.png';
-import pot from './assets/pot_56.png';
-import swap from './assets/swap_56.png';
+import pen from './assets/pen_svg_56.svg';
+import pot from './assets/pot_svg_56.svg';
+import swap from './assets/swap_svg_56.svg';
+import raffle from './assets/raffle_svg_56.svg';
 export const SplashCTA = () => {
   return (
     <CTA>
@@ -45,6 +46,14 @@ export const SplashCTA = () => {
             A lottery game where users bet $PEPE to win a pot of $PEPE. On each
             bet, 20% of your $PEPE is burned, 40% is added to the pot, and 40%
             goes to house reserves.
+          </span>
+           </CTAProductCard>
+        <CTAProductCard href="https://pepe.tzraffles.fun/" target="_blank">
+          <span><img src={raffle} /> PepeRaffle</span>
+          <span>
+            PepeRaffle stands as a decentralized raffle platform on the
+            Tezos blockchain, enabling individuals to effortlessly host
+            or participate in NFT raffles utilizing the $PEPE token.
           </span>
         </CTAProductCard>
       </CTAClick>
