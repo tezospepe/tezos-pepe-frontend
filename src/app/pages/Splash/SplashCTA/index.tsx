@@ -5,7 +5,10 @@ import {
   CTAHeader,
   CTAProductCard,
 } from './styles';
-
+import pen from './assets/pen_svg_56.svg';
+import pot from './assets/pot_svg_56.svg';
+import swap from './assets/swap_svg_56.svg';
+import raffle from './assets/raffle_svg_56.svg';
 export const SplashCTA = () => {
   return (
     <CTA>
@@ -24,25 +27,33 @@ export const SplashCTA = () => {
       </CTADescription>
       <CTAClick>
         <CTAProductCard href="https://nft.tezospepe.com/" target="_blank">
-          <span>🐸 pepe et nunc</span>
+          <span><img src={pen} />  pepe et nunc</span>
           <span>
             NFT platform powered by $PEPE. Users can buy and sell NFTs using
             $PEPE. 1% of each sell is sent to the DAO Treasury
           </span>
         </CTAProductCard>
         <CTAProductCard href="https://pot.tezospepe.com/swap" target="_blank">
-          <span>🐸 PepeSwap</span>
+          <span><img src={swap} /> PepeSwap</span>
           <span>
             PepeSwap is a DEX front end that utilizes Spicyswap backend. It
             allows users to see trades, charts and liquidity in one interface.
           </span>
         </CTAProductCard>
         <CTAProductCard href="https://pot.tezospepe.com/" target="_blank">
-          <span>🐸 PepePot</span>
+          <span><img src={pot} /> PepePot</span>
           <span>
             A lottery game where users bet $PEPE to win a pot of $PEPE. On each
             bet, 20% of your $PEPE is burned, 40% is added to the pot, and 40%
             goes to house reserves.
+          </span>
+           </CTAProductCard>
+        <CTAProductCard href="https://pepe.tzraffles.fun/" target="_blank">
+          <span><img src={raffle} /> PepeRaffle</span>
+          <span>
+            PepeRaffle stands as a decentralized raffle platform on the
+            Tezos blockchain, enabling individuals to effortlessly host
+            or participate in NFT raffles utilizing the $PEPE token.
           </span>
         </CTAProductCard>
       </CTAClick>
